@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <met#aeb3b8et="utf-8">
+        <meta charset="utf-8">
         <title>Portfolio Amir El-OUNI</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
@@ -112,7 +112,7 @@
                             </div>
                             <div class="col-md-4 col-lg-6 col-xl-4">
                                 <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">5</h1>
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10</h1>
                                     <div class="ps-3">
                                         <p class="mb-0">Complete</p>
                                         <h5 class="mb-0">Projects</h5>
@@ -154,6 +154,15 @@
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Node.js</p>
+                                       
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -253,6 +262,13 @@
                 <p class="mb-0">Management, security, and optimization of Linux systems to ensure performance and reliability.</p>
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="service-item">
+                <i class="fa fa-2x fa-cogs mx-auto mb-4"></i>
+                <h5 class="mb-2">Microservices Architecture</h5>
+                <p class="mb-0">Design and implementation of scalable microservices applications with container orchestration.</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -267,14 +283,86 @@
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
                         <li class="btn btn-secondary active" data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                        <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Web</li>
-                        <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>Mobile</li>
+                        <li class="btn btn-secondary" data-filter=".web"><i class="fa fa-laptop-code me-2"></i>Web</li>
+                        <li class="btn btn-secondary" data-filter=".mobile"><i class="fa fa-mobile-alt me-2"></i>Mobile</li>
+                        <li class="btn btn-secondary" data-filter=".microservice"><i class="fa fa-cogs me-2"></i>Microservices</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-md-6 mb-4 portfolio-item first">
-                    <h1>Traveling Spring Boot</h1>
+                <!-- SymptomCheck Microservice Project -->
+                <div class="col-md-6 mb-4 portfolio-item microservice">
+                    <h3>SymptomCheck</h3>
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="SymptomCheck Microservice Project">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="https://github.com/AMIROUNI/SymptomCheck.git" target="_blank">
+                                <i class="bi bi-box-arrow-up-right text-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-2">A microservices-based health application built with Spring Boot, Angular, Keycloak, and Kubernetes. Includes comprehensive testing with JUnit.</p>
+                </div>
+                
+                <!-- OptiPlan Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>OptiPlan</h3>
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="OptiPlan Project">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="https://github.com/AMIROUNI/OptiPlan.git" target="_blank">
+                                <i class="bi bi-box-arrow-up-right text-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-2">A Jira-like project management tool built with .NET and Angular for efficient task tracking and team collaboration.</p>
+                </div>
+                
+                <!-- Deephire Angular Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>Deephire Angular</h3>
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Deephire Angular Project">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="https://github.com/AMIROUNI/deephire-angular-.git" target="_blank">
+                                <i class="bi bi-box-arrow-up-right text-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-2">A comprehensive hiring platform built with Angular for streamlining the recruitment process.</p>
+                </div>
+                
+                <!-- Deephire Mobile Project -->
+                <div class="col-md-6 mb-4 portfolio-item mobile">
+                    <h3>Deephire Mobile</h3>
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Deephire Mobile Project">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="https://github.com/AMIROUNI/deephire_mobile.git" target="_blank">
+                                <i class="bi bi-box-arrow-up-right text-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-2">Mobile version of the Deephire platform, providing on-the-go access to recruitment features.</p>
+                </div>
+                
+                <!-- MyBiat Digital Banking Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>MyBiat - Digital Banking</h3>
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="MyBiat Digital Banking Project">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="https://github.com/AMIROUNI/MyBiat.git" target="_blank">
+                                <i class="bi bi-box-arrow-up-right text-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-2">A secure digital banking platform built with Node.js, Express, MongoDB, and EJS. Features account management, secure login, money transfers, and transaction tracking.</p>
+                </div>
+                
+                <!-- Traveling Spring Boot Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>Traveling Spring Boot</h3>
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid w-100" src="img/travelingSB.png" alt="Traveling Spring Boot Project">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
@@ -283,9 +371,12 @@
                             </a>
                         </div>
                     </div>
+                    <p class="mt-2">A travel management application built with Spring Boot for organizing and planning trips.</p>
                 </div>
-                <div class="col-md-6 mb-4 portfolio-item first">
-                    <h1>Esports Gaming</h1>
+                
+                <!-- Esports Gaming Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>Esports Gaming</h3>
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid w-100" src="img/esportsGaming.png" alt="Esports Gaming Project">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
@@ -294,9 +385,12 @@
                             </a>
                         </div>
                     </div>
+                    <p class="mt-2">A platform for esports enthusiasts to track tournaments, teams, and player statistics.</p>
                 </div>
-                <div class="col-md-6 mb-4 portfolio-item first">
-                    <h1>Traveling PHP</h1>
+                
+                <!-- Traveling PHP Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>Traveling PHP</h3>
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid w-100" src="img/travelingphp2.png" alt="Traveling PHP Project">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
@@ -305,9 +399,12 @@
                             </a>
                         </div>
                     </div>
+                    <p class="mt-2">A travel platform built with PHP for managing travel bookings and itineraries.</p>
                 </div>
-                <div class="col-md-6 mb-4 portfolio-item first">
-                    <h1>Mini Shop HTML</h1>
+                
+                <!-- Mini Shop HTML Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>Mini Shop HTML</h3>
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid w-100" src="img/shop.avif" alt="Mini Shop HTML Project">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
@@ -316,9 +413,12 @@
                             </a>
                         </div>
                     </div>
+                    <p class="mt-2">A simple e-commerce website built with HTML, CSS, and JavaScript for online shopping.</p>
                 </div>
-                <div class="col-md-6 mb-4 portfolio-item first">
-                    <h1>Library Management JavaFX</h1>
+                
+                <!-- Library Management JavaFX Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>Library Management JavaFX</h3>
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid w-100" src="img/library-management-system-logo-png-1.png" alt="Library Management JavaFX Project">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
@@ -327,11 +427,12 @@
                             </a>
                         </div>
                     </div>
+                    <p class="mt-2">A desktop application for library management built with JavaFX for book tracking and member management.</p>
                 </div>
 
-
-                <div class="col-md-6 mb-4 portfolio-item first">
-                    <h1>Portfolio</h1>
+                <!-- Portfolio Project -->
+                <div class="col-md-6 mb-4 portfolio-item web">
+                    <h3>Portfolio</h3>
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid w-100" src="img/portfolio-logo.png" alt="Portfolio Project">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
@@ -340,6 +441,7 @@
                             </a>
                         </div>
                     </div>
+                    <p class="mt-2">This responsive portfolio website showcasing my projects and skills.</p>
                 </div>
             </div>
         </div>
@@ -369,7 +471,7 @@
                                 <a class="text-light px-3" href="#">Help</a>
                             </div>
 							
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							<p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
                         </div>
                     </section>
