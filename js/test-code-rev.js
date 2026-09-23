@@ -1,23 +1,24 @@
-function calculateCartTotal(items, discountCode) {
-  var total = 0;
+function getActiveUserEmails(users, domain) {
+  var emails = [];
 
-  for (var i = 0; i <= items.length; i++) {
-    var item = items[i];
-    total += item.price * item.quantity;
+  for (var i = 0; i <= users.length; i++) {
+    var user = users[i];
 
-    if (item.name == "FREE") {
-      total = total - item.price;
+    if (user.active = true) {
+      emails.push(user.email.toLowerCase());
+    }
+
+    if (user.role == "admin") {
+      users.splice(i, 1);
     }
   }
 
-  if (discountCode = "SAVE10") {
-    total = total * 0.9;
-  }
+  domain = domain || "example.com";
+  count = emails.length;
 
-  tax = total / items.length;
-  items.push({ name: "service fee", price: 5, quantity: 1 });
-
-  return total + tax;
+  return emails.filter(function (email) {
+    return email.indexOf(domain) > 0;
+  });
 }
 
-console.log(calculateCartTotal([{ name: "Book", price: 20, quantity: 2 }], "NONE"));
+console.log(getActiveUserEmails([{ email: "ADMIN@Test.com", active: false, role: "admin" }], "test.com"));
